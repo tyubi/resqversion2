@@ -22,7 +22,7 @@
 
                     if($user_data['pass'] == $password)
                     {
-                        header("location: index.php");
+                        header("location: afterlogin.php");
                         die;
                     }
                 }

@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
+
+
+
 <body>
     
 <!--header-->
@@ -23,12 +27,13 @@
 
     <nav class="navbar">
         <a href="#home">home</a>
-        <a href="#services">services</a>
+        <!--<a href="#services">services</a>-->
         <a href="#about">about</a>
         <a href="#doctors">contact</a>
         <a href="#book">join us</a>
         <a href="#review">feedback</a>
         <a href="#blogs">news</a>
+        <a href="#book">Sign-In/Login</a>
     </nav>
 
     <div id="menu-btn" class="fas fa-bars"></div>
@@ -47,8 +52,7 @@
 
     <div class="content">
         <h3>your all in one safety companion!</h3> 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sed autem vero? Magnam,
-        est laboriosam!</p>
+        <p></p>
         <a href="#" class="btn"> scan your location now! <span class="fas fa-chevron-right"></span> </a>  
     </div>
 
@@ -57,7 +61,7 @@
 
     <!-- icon section -->
     
-<section class="icons-container">
+<!--<section id="icons">
 
     <div class="icons">
         <i class="fas fa-user-md"></i>
@@ -88,82 +92,27 @@
 <!-- icons section ends -->
 
 <!-- services section -->
+  
 
-<section class="services" id="services">
 
-    <h1 class="heading"> our <span>services</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <i class="fas fa-notes-medical"></i>
-            <h3>free checkups</h3>
-            <p>Seamless Integration: Our website seamlessly integrates with geolocation
-                 services, allowing users to easily determine their current location and 
-                 display a comprehensive list of nearby hospitals.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
+       <!--<div class="box">
             <i class="fas fa-ambulance"></i>
             <h3>24/7 ambulance</h3>
-            <p>Emergency Response at Any Time: Our 24/7 Ambulance Service guarantees that
-                 professional medical assistance is just a phone call away, regardless of 
-                 the hour. We understand the urgency of emergencies and strive to ensure 
-                 a rapid response to every distress call.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            <p>Contact an ambulance fast with just one scan of your location</p>
+            <a href="ambulance.php" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
         </div>
 
         <div class="box">
-            <i class="fas fa-heartbeat"></i>
-            <h3>total care</h3>
-            <p>designed to provide comprehensive support and assistance during emergencies, 
-                ensuring the well-being and safety of individuals in distress. By integrating
-                 various essential services and resources into one cohesive platform, we 
-                 aim to offer a holistic approach to emergency response and care.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
+            <img src="user-shield.png">
+            <h3>24/7 police help</h3>
+            <p>Report a crime or ask for police help fast and secure</p>
+            <a href="care.php" class="btn">learn more</a>
+        </div>-->
 
-        <div class="box">
-            <i class="fas fa-user-md"></i>
-            <h3>expert doctors</h3>
-            <p>Our rescue website hosts a comprehensive directory of expert doctors across different
-                 medical specialties. Users can easily search and find doctors who specialize in
-                 specific areas such as cardiology, neurology, pediatrics, dermatology, and more.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
 
-        <div class="box">
-            <i class="fas fa-procedures"></i>
-            <h3>on the spot help</h3>
-            <p>Our rescue website incorporates a live chat feature that enables users to connect with
-                 trained professionals in real-time. This instant messaging system allows individuals to 
-                 seek immediate help, ask questions, and receive prompt guidance during emergencies.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
+</div>
 
-        <div class="box">
-            <i class="fas fa-heartbeat"></i>
-            <h3>Appointment Scheduling</h3>
-            <p>Users can easily schedule appointments with expert doctors through our website. This
-                 feature enables them to choose a convenient date and time slot for their consultation, 
-                 reducing waiting times and ensuring a streamlined healthcare experience.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-notes-medical"></i>
-            <h3>Real-Time Tracking</h3>
-            <p>Incorporates real-time tracking technology for ambulances, allowing 
-                users and their loved ones to monitor the location and progress of 
-                dispatched ambulances. This feature enhances coordination and ensures
-                 peace of mind during transportation.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-    </div>
-
-</section>
+</section> -->
 
     <!-- services section ends -->
 
@@ -300,7 +249,7 @@
             </div>
     
             <div class="content">
-                <a href="signup.php" target="_blank" class="btn">  SIGN UP FOR FREE <span class="fas fa-chevron-right"></span> </a>
+                <a href="signup.php" class="btn">  SIGN UP FOR FREE <span class="fas fa-chevron-right"></span> </a>
             </div>
 
         </div>
@@ -598,7 +547,7 @@
 
 <section class="footer">
 
-    <div class="box-container">
+    <!--<div class="box-container">
 
         <div class="box">
             <h3>quick links</h3>
@@ -614,11 +563,9 @@
         
         <div class="box">
             <h3>our services</h3>
-            <a href="#"> <i class="fas fa-chevron-right"></i> Free Checkups </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> 24/7 Fire Alert </a>
             <a href="#"> <i class="fas fa-chevron-right"></i> 24/7 Ambulance </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> Expert Doctors </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> On The Spot Help </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> total care </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> 24/7 Police Help </a>
         </div>
 
         <div class="box">
@@ -633,11 +580,11 @@
             <h3>follow us</h3>
             <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
             <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="https://www.instagram.com/resqinfoweb/"> <i class="fab fa-instagram"></i> instagram </a>
             <a href="#"> <i class="fab fa-linkedin"></i> linkedIn </a>
         </div>
 
-    </div>
+    </div>-->
 
     <div class="credit"> created by <span> group 6 SOFTWARE DESIGN </span> | all right reserved </div>
     
