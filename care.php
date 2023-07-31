@@ -181,6 +181,7 @@ $checkupSchedule = "Monday to Friday: 9 AM - 5 PM";
         <?php
         }
         ?>
+        
         <!--<h2>Manila Police Station 8 Sta. Mesa<h2>
         <ul>
             <li>Address: Old Sta. Mesa Street, Sta. Mesa, Manila</li>
@@ -230,7 +231,7 @@ $checkupSchedule = "Monday to Friday: 9 AM - 5 PM";
             <li>Contact Number: +632 563-4619</li>
         </ul>
 
-        <h2>Dagonoy Police Community Precinct<h2> DI PA NALALAGAY SA DATABASE DAGONOY HANGGANG Blumentritt
+        <h2>Dagonoy Police Community Precinct<h2>
         <ul>
             <li>Address: Dagunoy Former Florantino Torres Cor. Crisolita, 767 San Andres Bukid, Manila</li>
             <li>Contact Number: +632 230-9879</li>

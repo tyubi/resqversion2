@@ -149,7 +149,8 @@ $checkupSchedule = "Monday to Friday: 9 AM - 5 PM";
 
     </style>
 </head>
-]<body>
+<body>
+    
     <header class="header">
         <a href="#" class="logo"> <i class="fas fa-stethoscope"></i> <strong>ResQ</strong></a>
     </header>

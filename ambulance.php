@@ -176,6 +176,7 @@ $checkupSchedule = "Monday to Friday: 9 AM - 5 PM";
         <?php
         }
         ?>
+        
         <!--<h2>Translife EMS<h2>
         <ul>
             <li>Address: 1013 Gerardo, Sampaloc, Maynila, 1008 Kalakhang Maynila</li>

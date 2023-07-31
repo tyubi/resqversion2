@@ -57,7 +57,8 @@
     </div>
 
 </section>
-    <!-- home section ends -->
+
+<!-- home section ends -->
 
     <!-- icon section -->
     
