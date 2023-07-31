@@ -158,14 +158,26 @@ $checkupSchedule = "Monday to Friday: 9 AM - 5 PM";
         <img src="img/fire.png" style="display: block; margin: 0 auto; max-width: 300px;">
         <h1>Fire Stations Stations</h1>
         <p>The Fire Stations near Sta. Mesa, Manila provide protection of life, property, and the environment from the effects of fires, medical emergencies, and hazards.</p>
-        
-        <h2>Pandacan Fire Station<h2>
-        <ul>
-            <li>Address: L.Certeza, Manila, Philippines</li>
-            <li>Contact Number:+63 2 563 1074</li>
-        </ul>
+        <?php 
+        include("db.php");
 
-        <h2>Galas Fire Sub Station<h2>
+        $station = "SELECT * FROM station";
+        $station_run = $con->query($station);
+        ?>
+
+        <?php
+        while($row = mysqli_fetch_assoc($station_run)){
+        ?>
+        <h2><?php echo $row['station_name'] ?><h2>
+        <ul>
+            <li>Address: <?php echo $row['station_add'] ?></li>
+            <li>Contact Number:<?php echo $row['station_no'] ?></li>
+        </ul>
+        <?php
+        }
+        ?>
+
+        <!--<h2>Galas Fire Sub Station<h2>
         <ul>
             <li>Address:Unang Hakbang Street, Galas, Quezon City, Metro Manila</li>
             <li>Contact Number:(02) 8715 5573</li>
@@ -188,7 +200,7 @@ $checkupSchedule = "Monday to Friday: 9 AM - 5 PM";
         <ul>
             <li>Address: P1 Col. Bonny Serrano Ave, San Juan, 1500 Metro Manila</li>
             <li>Contact Number: (02) 8725 2079</li>
-        </ul>
+        </ul>-->
 
         
         <a href="afterlogin.php" class="btn"> Back to main page <span class="fas fa-chevron-right"></span> </a>

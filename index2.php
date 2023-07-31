@@ -29,7 +29,7 @@
         <a href="#home">home</a>
         <!--<a href="#services">services</a>-->
         <a href="#about">about</a>
-        <a href="#doctors">contact</a>
+        <!--<a href="#doctors">contact</a>-->
         <a href="#book">join us</a>
         <a href="#review">feedback</a>
         <a href="#blogs">news</a>
@@ -152,7 +152,7 @@
 
     <!-- doctors section starts -->
 
-<section class="doctors" id="doctors">
+<!--<section class="doctors" id="doctors">
 
     <h1 class="heading"> the <span>proponents</span> </h1>
 
@@ -232,7 +232,7 @@
 
     </div>
 
-</section>
+</section>-->
 
     <!-- doctors section ends -->
     

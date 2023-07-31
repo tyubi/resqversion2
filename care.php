@@ -163,8 +163,25 @@ $checkupSchedule = "Monday to Friday: 9 AM - 5 PM";
         <img src="img/police.png" style="display: block; margin: 0 auto; max-width: 300px;">
         <h1>Police Stations</h1>
         <p>The Police Stations near Sta. Mesa, Manila is a dedicated law enforcement agency that prioritizes the safety and security of the community. With a strong commitment to public service, the police force consists of highly trained officers who diligently enforce laws, prevent crime, and respond swiftly to emergencies.</p>
-        
-        <h2>Manila Police Station 8 Sta. Mesa<h2>
+        <?php 
+        include("db.php");
+
+        $police = "SELECT * FROM police";
+        $police_run = $con->query($police);
+        ?>
+
+        <?php
+        while($row = mysqli_fetch_assoc($police_run)){
+        ?>
+        <h2><?php echo $row['police_name'] ?><h2>
+        <ul>
+            <li>Address: <?php echo $row['police_add'] ?></li>
+            <li>Contact Number:<?php echo $row['police_no'] ?></li>
+        </ul>
+        <?php
+        }
+        ?>
+        <!--<h2>Manila Police Station 8 Sta. Mesa<h2>
         <ul>
             <li>Address: Old Sta. Mesa Street, Sta. Mesa, Manila</li>
             <li>Contact Number: +632 715-4124</li>
@@ -213,7 +230,7 @@ $checkupSchedule = "Monday to Friday: 9 AM - 5 PM";
             <li>Contact Number: +632 563-4619</li>
         </ul>
 
-        <h2>Dagonoy Police Community Precinct<h2>
+        <h2>Dagonoy Police Community Precinct<h2> DI PA NALALAGAY SA DATABASE DAGONOY HANGGANG Blumentritt
         <ul>
             <li>Address: Dagunoy Former Florantino Torres Cor. Crisolita, 767 San Andres Bukid, Manila</li>
             <li>Contact Number: +632 230-9879</li>
@@ -235,7 +252,7 @@ $checkupSchedule = "Monday to Friday: 9 AM - 5 PM";
         <ul>
             <li>Address: F. Blumentritt, San Juan City</li>
             <li>Contact Number: +63 919-847-3525</li>
-        </ul>
+        </ul>-->
 
 
         <a href="afterlogin.php" class="btn"> Back to main page <span class="fas fa-chevron-right"></span> </a>

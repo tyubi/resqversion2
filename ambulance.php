@@ -158,14 +158,31 @@ $checkupSchedule = "Monday to Friday: 9 AM - 5 PM";
         <img src="img/ambu.png" style="display: block; margin: 0 auto; max-width: 300px;">
         <h1>Ambulances</h1>
         <p>Ambulances near Sta. Mesa Manila are essential emergency medical vehicles equipped with life-saving equipment and staffed by trained medical professionals. These ambulances play a crucial role in providing immediate medical assistance and transportation to individuals facing medical emergencies or accidents in the area.</p>
-        
-        <h2>Translife EMS<h2>
+        <?php 
+        include("db.php");
+
+        $ambulance = "SELECT * FROM ambulance";
+        $ambulance_run = $con->query($ambulance);
+        ?>
+
+        <?php
+        while($row = mysqli_fetch_assoc($ambulance_run)){
+        ?>
+        <h2><?php echo $row['ambulance_name'] ?><h2>
+        <ul>
+            <li>Address: <?php echo $row['ambulance_add'] ?></li>
+            <li>Contact Number:<?php echo $row['ambulance_no'] ?></li>
+        </ul>
+        <?php
+        }
+        ?>
+        <!--<h2>Translife EMS<h2>
         <ul>
             <li>Address: 1013 Gerardo, Sampaloc, Maynila, 1008 Kalakhang Maynila</li>
             <li>Contact Number: +63 9176179497</li>
         </ul>
 
-        <h2>Ace-Cor Ambulance Service<h2>
+        <h2>Ace-Cor Ambulance Service<h2> WALA PA SA DATABASE ACE-COR HANGGANG DULO
         <ul>
             <li>Address: 756 Instruccion St, Sampaloc, Manila, 1008 Metro Manila</li>
             <li>Contact Number: +63 9175062280</li>
@@ -224,7 +241,7 @@ $checkupSchedule = "Monday to Friday: 9 AM - 5 PM";
         <ul>
             <li>Address: 42B Nicanor Roxas St, Quezon City, Metro Manila</li>
             <li>Contact Number: (02)89256292</li>
-        </ul>
+        </ul>-->
 
         <a href="afterlogin.php" class="btn"> Back to main page <span class="fas fa-chevron-right"></span> </a>
     </div>
